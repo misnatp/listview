@@ -1,75 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// void main() {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: AddItemScreen(),
-//     );
-//   }
-// }
-
-// class AddItemScreen extends StatefulWidget {
-//   const AddItemScreen({super.key});
-
-//   @override
-//   State<AddItemScreen> createState() => _AddItemScreenState();
-// }
-
-// class _AddItemScreenState extends State<AddItemScreen> {
-//   final TextEditingController controller = TextEditingController();
-//   final List<String> items = [];
-
-//   void addItem() {
-//     if (controller.text.trim().isEmpty) return;
-
-//     setState(() {
-//       items.add(controller.text.trim());
-//       controller.clear();
-//     });
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: const Text('Add Items')),
-//       body: Column(
-//         children: [
-//           Padding(
-//             padding: const EdgeInsets.all(12),
-//             child: Row(
-//               children: [
-//                 Expanded(
-//                   child: TextField(
-//                     controller: controller,
-//                     decoration: const InputDecoration(hintText: 'Enter item'),
-//                   ),
-//                 ),
-//                 IconButton(onPressed: addItem, icon: const Icon(Icons.add)),
-//               ],
-//             ),
-//           ),
-//           Expanded(
-//             child: ListView.builder(
-//               itemCount: items.length,
-//               itemBuilder: (context, index) {
-//                 return ListTile(title: Text(items[index]));
-//               },
-//             ),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -161,7 +89,6 @@ class _AddItemScreenState extends State<AddItemScreen> {
             ),
           ),
 
-          // List section
           Expanded(
             child:
                 items.isEmpty
